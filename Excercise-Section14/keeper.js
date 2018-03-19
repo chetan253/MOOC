@@ -1,7 +1,7 @@
 var p1Score = document.getElementById("p1Score");
 var p2Score = document.getElementById("p2Score");
 var limit = document.getElementById("limit");
-var txtlimit = document.querySelector("#txtlimit");
+var txtlimit = document.getElementById("txtlimit");
 var player1 = document.getElementById("player1");
 var player2 = document.getElementById("player2");
 var reset = document.getElementById("reset");
@@ -48,7 +48,7 @@ player2.addEventListener("click", function(){
 });
 
 reset.addEventListener("click", function(){
-	txtlimit.innerHTML.value = '';
+	txtlimit.value = '';
 	p1ScoreInt = 0;
 	p2ScoreInt = 0;
 	limitInt = 5;
